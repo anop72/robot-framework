@@ -7,10 +7,10 @@ ${SERVER1}    http://localhost:7272
 ${BROWSER}    GC
 
 *** TEST CASE ***
-#Fill login
-#    [Template]    Fill Input
-#    demo    mode    Welcome Page
-#    ${empty}    ${empty}    Error Page
+Fill login
+    [Template]    Fill Input
+    demo    mode    Welcome Page
+    ${empty}    ${empty}    Error Page
 
 Valid login
     Fill Input    demo    mode    Welcome Page
