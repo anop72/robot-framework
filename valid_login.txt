@@ -7,22 +7,23 @@ ${SERVER1}    http://localhost:7272
 ${BROWSER}    GC
 
 *** TEST CASE ***
+#Fill login
+#    [Template]    Fill Input
+#    demo    mode    Welcome Page
+#    ${empty}    ${empty}    Error Page
+
 Valid login
-    Open Browser    ${SERVER1}    ${BROWSER}
-    Fill Input    demo    mode
-    Submit Form
-    Page Should Contain     Welcome Page
-    [Teardown]    Close Browser
+    Fill Input    demo    mode    Welcome Page
 
 Empty login
-    Open Browser    ${SERVER1}    ${BROWSER}
-    Fill Input    ${empty}    ${empty}
-    Submit Form
-    Page Should Contain     Error Page
-    [Teardown]    Close Browser
+    Fill Input    ${empty}    ${empty}    Error Page
 
 *** Keyword ***
 Fill Input
-  [Arguments]    ${username}    ${password}
+  [Arguments]    ${username}    ${password}    ${title}
+  Open Browser    ${SERVER1}    ${BROWSER}
   Input Text    username_field    ${username}
   Input Text    password_field    ${password}
+  Submit Form
+  Page Should Contain     ${title}
+  [Teardown]    Close Browser
