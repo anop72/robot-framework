@@ -14,13 +14,21 @@ Fill login
 
 *** Keyword ***
 Fill Input
-  [Arguments]    ${username}    ${password}    ${title}
+  [Arguments]    ${ชื่อผู้ใช้}    ${พาสเวิด}    ${title}
   เปิดหน้าล๊อกอิน
-  Input Text    username_field    ${username}
-  Input Text    password_field    ${password}
+  กรอกชื่อผู้ใช้    ${ชื่อผู้ใช้}
+  กรอกพาสเวิด    ${พาสเวิด}
   Submit Form
   Page Should Contain     ${title}
   [Teardown]    Close Browser
 
 เปิดหน้าล๊อกอิน
   Open Browser    ${SERVER1}    ${BROWSER}
+
+กรอกชื่อผู้ใช้
+  [Arguments]    ${value}
+  Input Text    username_field    ${value}
+
+กรอกพาสเวิด
+  [Arguments]    ${value}
+  Input Text    password_field    ${value}
