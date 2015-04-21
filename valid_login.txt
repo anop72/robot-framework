@@ -12,12 +12,6 @@ Fill login
     demo    mode    Welcome Page
     ${empty}    ${empty}    Error Page
 
-Valid login
-    Fill Input    demo    mode    Welcome Page
-
-Empty login
-    Fill Input    ${empty}    ${empty}    Error Page
-
 *** Keyword ***
 Fill Input
   [Arguments]    ${username}    ${password}    ${title}
