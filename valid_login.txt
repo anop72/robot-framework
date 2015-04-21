@@ -1,0 +1,32 @@
+*** SETTING ***
+Library           Selenium2Library
+Documentation     Valid login
+
+*** Variables ***
+${SERVER1}    http://localhost:7272
+${BROWSER}    GC
+
+*** TEST CASE ***
+Valid login
+    Open Browser    ${SERVER1}    ${BROWSER}
+    #Input Text    username_field    demo
+    #Input Text    password_field    mode
+    #Fill Input    demo    ${empty}
+    Submit Form
+    Page Should Contain     Welcome Page
+    Close Browser
+
+Empty login
+    Open Browser    ${SERVER1}    ${BROWSER}
+    #Input Text    username_field    ${empty}
+    #Input Text    password_field    ${empty}
+    #Fill Input    ${empty}    ${empty}
+    Submit Form
+    Page Should Contain     Error Page
+    Close Browser
+
+*** Keyword ***
+Fill Input
+  [Arguments]    ${username}    ${password}
+  Input Text    username_field    ${username}
+  Input Text    password_field    ${password}
