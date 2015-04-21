@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20150421 13:24:52.718" generator="Robot 2.8.4 (Python 2.7.6 on darwin)">
+<robot generated="20150421 13:30:40.277" generator="Robot 2.8.4 (Python 2.7.6 on darwin)">
 <suite source="/Users/ak/Documents/robot-project/valid_login.txt" id="s1" name="Valid Login">
 <test id="s1-t1" name="Valid login">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -8,8 +8,8 @@
 <arg>${SERVER1}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20150421 13:24:52.870" level="INFO">Opening browser 'GC' to base url 'http://localhost:7272'</msg>
-<status status="PASS" endtime="20150421 13:24:55.568" starttime="20150421 13:24:52.870"></status>
+<msg timestamp="20150421 13:30:40.421" level="INFO">Opening browser 'GC' to base url 'http://localhost:7272'</msg>
+<status status="PASS" endtime="20150421 13:30:42.762" starttime="20150421 13:30:40.420"></status>
 </kw>
 <kw type="kw" name="Fill Input">
 <doc></doc>
@@ -23,8 +23,8 @@
 <arg>username_field</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150421 13:24:55.571" level="INFO">Typing text 'demo' into text field 'username_field'</msg>
-<status status="PASS" endtime="20150421 13:24:55.722" starttime="20150421 13:24:55.570"></status>
+<msg timestamp="20150421 13:30:42.765" level="INFO">Typing text 'demo' into text field 'username_field'</msg>
+<status status="PASS" endtime="20150421 13:30:42.883" starttime="20150421 13:30:42.764"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -32,36 +32,36 @@
 <arg>password_field</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150421 13:24:55.723" level="INFO">Typing text 'mode' into text field 'password_field'</msg>
-<status status="PASS" endtime="20150421 13:24:55.840" starttime="20150421 13:24:55.722"></status>
+<msg timestamp="20150421 13:30:42.884" level="INFO">Typing text 'mode' into text field 'password_field'</msg>
+<status status="PASS" endtime="20150421 13:30:42.985" starttime="20150421 13:30:42.884"></status>
 </kw>
-<status status="PASS" endtime="20150421 13:24:55.840" starttime="20150421 13:24:55.569"></status>
+<status status="PASS" endtime="20150421 13:30:42.985" starttime="20150421 13:30:42.763"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Submit Form">
 <doc>Submits a form identified by `locator`.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20150421 13:24:55.841" level="INFO">Submitting form 'None'.</msg>
-<status status="PASS" endtime="20150421 13:24:55.901" starttime="20150421 13:24:55.841"></status>
+<msg timestamp="20150421 13:30:42.986" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20150421 13:30:43.037" starttime="20150421 13:30:42.985"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Page Should Contain">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Welcome Page</arg>
 </arguments>
-<msg timestamp="20150421 13:24:55.924" level="INFO">Current page contains text 'Welcome Page'.</msg>
-<status status="PASS" endtime="20150421 13:24:55.924" starttime="20150421 13:24:55.902"></status>
+<msg timestamp="20150421 13:30:43.061" level="INFO">Current page contains text 'Welcome Page'.</msg>
+<status status="PASS" endtime="20150421 13:30:43.061" starttime="20150421 13:30:43.038"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Close Browser">
+<kw type="teardown" name="Selenium2Library.Close Browser">
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20150421 13:24:55.999" starttime="20150421 13:24:55.924"></status>
+<status status="PASS" endtime="20150421 13:30:44.137" starttime="20150421 13:30:43.062"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20150421 13:24:56.000" critical="yes" starttime="20150421 13:24:52.869"></status>
+<status status="PASS" endtime="20150421 13:30:44.137" critical="yes" starttime="20150421 13:30:40.420"></status>
 </test>
 <test id="s1-t2" name="Empty login">
 <kw type="kw" name="Selenium2Library.Open Browser">
@@ -70,8 +70,8 @@
 <arg>${SERVER1}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20150421 13:24:56.005" level="INFO">Opening browser 'GC' to base url 'http://localhost:7272'</msg>
-<status status="PASS" endtime="20150421 13:24:58.259" starttime="20150421 13:24:56.003"></status>
+<msg timestamp="20150421 13:30:44.139" level="INFO">Opening browser 'GC' to base url 'http://localhost:7272'</msg>
+<status status="PASS" endtime="20150421 13:30:46.349" starttime="20150421 13:30:44.139"></status>
 </kw>
 <kw type="kw" name="Fill Input">
 <doc></doc>
@@ -85,8 +85,8 @@
 <arg>username_field</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20150421 13:24:58.261" level="INFO">Typing text '' into text field 'username_field'</msg>
-<status status="PASS" endtime="20150421 13:24:58.340" starttime="20150421 13:24:58.261"></status>
+<msg timestamp="20150421 13:30:46.351" level="INFO">Typing text '' into text field 'username_field'</msg>
+<status status="PASS" endtime="20150421 13:30:46.431" starttime="20150421 13:30:46.351"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Input Text">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -94,41 +94,41 @@
 <arg>password_field</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20150421 13:24:58.341" level="INFO">Typing text '' into text field 'password_field'</msg>
-<status status="PASS" endtime="20150421 13:24:58.402" starttime="20150421 13:24:58.340"></status>
+<msg timestamp="20150421 13:30:46.431" level="INFO">Typing text '' into text field 'password_field'</msg>
+<status status="PASS" endtime="20150421 13:30:46.490" starttime="20150421 13:30:46.431"></status>
 </kw>
-<status status="PASS" endtime="20150421 13:24:58.402" starttime="20150421 13:24:58.260"></status>
+<status status="PASS" endtime="20150421 13:30:46.490" starttime="20150421 13:30:46.349"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Submit Form">
 <doc>Submits a form identified by `locator`.</doc>
 <arguments>
 </arguments>
-<msg timestamp="20150421 13:24:58.403" level="INFO">Submitting form 'None'.</msg>
-<status status="PASS" endtime="20150421 13:24:58.452" starttime="20150421 13:24:58.402"></status>
+<msg timestamp="20150421 13:30:46.491" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20150421 13:30:46.538" starttime="20150421 13:30:46.491"></status>
 </kw>
 <kw type="kw" name="Selenium2Library.Page Should Contain">
 <doc>Verifies that current page contains `text`.</doc>
 <arguments>
 <arg>Error Page</arg>
 </arguments>
-<msg timestamp="20150421 13:24:58.474" level="INFO">Current page contains text 'Error Page'.</msg>
-<status status="PASS" endtime="20150421 13:24:58.474" starttime="20150421 13:24:58.452"></status>
+<msg timestamp="20150421 13:30:46.575" level="INFO">Current page contains text 'Error Page'.</msg>
+<status status="PASS" endtime="20150421 13:30:46.575" starttime="20150421 13:30:46.538"></status>
 </kw>
-<kw type="kw" name="Selenium2Library.Close Browser">
+<kw type="teardown" name="Selenium2Library.Close Browser">
 <doc>Closes the current browser.</doc>
 <arguments>
 </arguments>
-<status status="PASS" endtime="20150421 13:24:58.548" starttime="20150421 13:24:58.474"></status>
+<status status="PASS" endtime="20150421 13:30:46.653" starttime="20150421 13:30:46.575"></status>
 </kw>
 <doc></doc>
 <tags>
 </tags>
-<status status="PASS" endtime="20150421 13:24:58.550" critical="yes" starttime="20150421 13:24:56.001"></status>
+<status status="PASS" endtime="20150421 13:30:46.654" critical="yes" starttime="20150421 13:30:44.138"></status>
 </test>
 <doc>Valid login</doc>
 <metadata>
 </metadata>
-<status status="PASS" endtime="20150421 13:24:58.552" starttime="20150421 13:24:52.718"></status>
+<status status="PASS" endtime="20150421 13:30:46.655" starttime="20150421 13:30:40.278"></status>
 </suite>
 <statistics>
 <total>

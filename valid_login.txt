@@ -12,14 +12,14 @@ Valid login
     Fill Input    demo    mode
     Submit Form
     Page Should Contain     Welcome Page
-    Close Browser
+    [Teardown]    Close Browser
 
 Empty login
     Open Browser    ${SERVER1}    ${BROWSER}
     Fill Input    ${empty}    ${empty}
     Submit Form
     Page Should Contain     Error Page
-    Close Browser
+    [Teardown]    Close Browser
 
 *** Keyword ***
 Fill Input
