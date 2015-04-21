@@ -9,18 +9,14 @@ ${BROWSER}    GC
 *** TEST CASE ***
 Valid login
     Open Browser    ${SERVER1}    ${BROWSER}
-    #Input Text    username_field    demo
-    #Input Text    password_field    mode
-    #Fill Input    demo    ${empty}
+    Fill Input    demo    mode
     Submit Form
     Page Should Contain     Welcome Page
     Close Browser
 
 Empty login
     Open Browser    ${SERVER1}    ${BROWSER}
-    #Input Text    username_field    ${empty}
-    #Input Text    password_field    ${empty}
-    #Fill Input    ${empty}    ${empty}
+    Fill Input    ${empty}    ${empty}
     Submit Form
     Page Should Contain     Error Page
     Close Browser
